@@ -160,7 +160,7 @@ export default function Home() {
           <Background></Background>
           {/* User */}
           <div className="absolute inset-0 flex justify-center items-center bg-opacity-30">
-            <div className="transition delay-20 ease-in-out delay-150 w-11/12 md:w-4/12 bg-slate-400 shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-lg border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-full">
+            <div className="transition delay-20 ease-in-out delay-150 w-11/12 md:w-4/12 bg-slate-400 shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-lg border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-screen">
               <div className="place-items-center grid">
                 <Image
                   src={"/pfp.png"}
@@ -168,7 +168,7 @@ export default function Home() {
                   height={200}
                   alt="pfp"
                   className={
-                    "transition-all ease-in-out delay-50 object-center rounded-full mt-10  border-4 hover:border-0 relative w-36 " +
+                    "transition-all ease-in-out delay-50 object-center rounded-full md:mt-10 mt-5 border-4 hover:border-0 relative w-36 " +
                     status
                   }
                 />
@@ -205,10 +205,10 @@ export default function Home() {
                         width={130}
                         height={130}
                         alt=""
-                        className="mx-8 my-8 rounded-md"
+                        className="mx-8 my-8 rounded-md sm:w-28 md:w-32"
                       />
                       {/* Title */}
-                      <h1 className="text-3xl text-center">
+                      <h1 className="md:text-3xl text-center text-2xl">
                         {data.spotify.song}
                       </h1>
                       {/* Artist */}
