@@ -26,27 +26,35 @@ export default function Home() {
             <div className="justify-center items-center flex flex-col pb-20 pt-10 space-y-5">
               <a
                 href="https://nexusadmin.co"
-                className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                className="transition flex ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
               >
-                Nexus Admin
+                <span className="text-center justify-center items-center flex text-2xl">
+                  Nexus Admin
+                </span>
               </a>
               <a
                 href="https://discord.gg/hosts"
-                className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                className="transition flex ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
               >
-                Lenny.host
+                <span className="text-center justify-center items-center flex text-2xl">
+                  Lenny.host
+                </span>
               </a>
               <a
                 href="https://discord.gg/aurevo-970496322262167612"
-                className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                className="transition flex ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
               >
-                Aurevo
+                <span className="text-center justify-center items-center flex text-2xl">
+                  Aurevo
+                </span>
               </a>
               <a
                 href="https://discord.gg/gQvY5gUKwb"
-                className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                className="transition flex ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
               >
-                Xonia
+                <span className="text-center justify-center items-center flex text-2xl">
+                  Xonia
+                </span>
               </a>
             </div>
             <div className="justify-center items-center flex flex-col py-10 space-y-5">
