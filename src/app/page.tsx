@@ -168,14 +168,14 @@ export default function Home() {
                   height={200}
                   alt="pfp"
                   className={
-                    "transition-all ease-in-out delay-50 object-center rounded-full mt-10  border-4 hover:border-0 " +
+                    "transition-all ease-in-out delay-50 object-center rounded-full mt-10  border-4 hover:border-0 relative w-36 " +
                     status
                   }
                 />
               </div>
               <div className="justify-center items-center flex flex-col py-5 space-y-5">
-                <h1 className="text-5xl">Lenny</h1>
-                <h1 className="text-3xl">Full stack developer</h1>
+                <h1 className="md:text-5xl text-3xl">Lenny</h1>
+                <h1 className="md:text-3xl text-xl">Full stack developer</h1>
               </div>
               <div className="justify-center items-center flex flex-col py-5 space-y-5">
                 <a
@@ -192,7 +192,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="justify-between flex mx-8 my-3">
-                <div className="flex flex-col py-3 justify-center items-center rounded-md bg-slate-800 bg-opacity-30 backdrop-blur-md w-full my-5">
+                <div className="flex flex-col md:py-3 justify-center items-center rounded-md bg-slate-800 bg-opacity-30 backdrop-blur-md w-full md:my-5">
                   {/* Picture */}
                   {isLoading && !initialLoadCompleted ? (
                     <div>Loading...</div>
