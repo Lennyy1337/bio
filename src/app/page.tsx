@@ -159,8 +159,8 @@ export default function Home() {
         <div>
           <Background></Background>
           {/* User */}
-          <div className="absolute inset-0 flex justify-center items-center bg-opacity-30">
-            <div className="transition delay-20 ease-in-out delay-150 w-11/12 md:w-4/12 bg-slate-400 shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-lg border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-screen md:mt-0 sm:mt-10">
+          <div className="absolute inset-0 flex justify-center items-center bg-opacity-30 overflow-auto">
+            <div className="transition ease-in-out delay-150 w-11/12 md:w-1/4 bg-slate-400 overflow-auto shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-lg border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-5/6 md:mt-0 sm:mt-10">
               <div className="place-items-center grid">
                 <Image
                   src={"/pfp.png"}
@@ -191,7 +191,7 @@ export default function Home() {
                   Socials
                 </a>
               </div>
-              <div className="justify-between flex mx-8 my-3">
+              <div className="justify-between flex mx-8 md:my-3 my-1">
                 <div className="flex flex-col md:py-3 justify-center items-center rounded-md bg-slate-800 bg-opacity-30 backdrop-blur-md w-full md:my-5">
                   {/* Picture */}
                   {isLoading && !initialLoadCompleted ? (
@@ -200,19 +200,23 @@ export default function Home() {
                     error
                   ) : data && data.spotify ? (
                     <>
+                      <h1 className="text-center md:text-2xl sm:text-lg">
+                        Currently listening to:
+                      </h1>
                       <Image
                         src={data.spotify.album_art_url}
                         width={130}
                         height={130}
                         alt=""
-                        className="mx-8 my-8 rounded-md sm:w-28 md:w-32"
+                        className="md:mx-8 md:my-8 rounded-md sm:w-28 md:w-32"
                       />
+
                       {/* Title */}
-                      <h1 className="md:text-3xl text-center text-2xl">
+                      <h1 className="md:text-3xl text-center text-2xl text-ellipsis">
                         {data.spotify.song}
                       </h1>
                       {/* Artist */}
-                      <h1 className="text-center text-sm">
+                      <h1 className="text-center text-sm text-ellipsis">
                         {data.spotify.artist}
                       </h1>
                     </>
