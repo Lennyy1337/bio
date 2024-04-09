@@ -160,7 +160,7 @@ export default function Home() {
           <Background></Background>
           {/* User */}
           <div className="absolute inset-0 flex justify-center items-center bg-opacity-30 overflow-auto">
-            <div className="transition ease-in-out delay-150 w-11/12 md:w-1/4 bg-slate-400 overflow-auto shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-lg border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-5/6 md:mt-0 sm:mt-10">
+            <div className="transition ease-in-out delay-150 md:w-[500px] bg-slate-400 overflow-auto shadow-xl shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-lg border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-5/6 md:mt-0 sm:mt-10">
               <div className="place-items-center grid">
                 <Image
                   src={"/pfp.png"}
@@ -180,19 +180,19 @@ export default function Home() {
               <div className="justify-center items-center flex flex-col py-5 space-y-5">
                 <a
                   href="/projects"
-                  className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                  className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-3/5 hover:-translate-y-1 hover:bg-indigo-500 text-center"
                 >
                   Projects
                 </a>
                 <a
                   href="/socials"
-                  className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                  className="transition ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-3/5 hover:-translate-y-1 hover:bg-indigo-500 text-center"
                 >
                   Socials
                 </a>
               </div>
               <div className="justify-between flex mx-8 md:my-3 my-1">
-                <div className="flex flex-col md:py-3 justify-center items-center rounded-md bg-slate-800 bg-opacity-30 backdrop-blur-md w-full md:my-5">
+                <div className="flex flex-col md:py-3 justify-center items-center rounded-md bg-slate-800 bg-opacity-30 backdrop-blur-md w-full mb-5 ">
                   {/* Picture */}
                   {isLoading && !initialLoadCompleted ? (
                     <div>Loading...</div>
@@ -212,7 +212,7 @@ export default function Home() {
                       />
 
                       {/* Title */}
-                      <h1 className="md:text-3xl text-center text-2xl text-ellipsis">
+                      <h1 className="md:text-3xl text-center text-2xl text-ellipsis overflow-hidden">
                         {data.spotify.song}
                       </h1>
                       {/* Artist */}
