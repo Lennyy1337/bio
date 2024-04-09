@@ -160,7 +160,7 @@ export default function Home() {
           <Background></Background>
           {/* User */}
           <div className="absolute inset-0 flex justify-center items-center bg-opacity-30 overflow-auto">
-            <div className="transition ease-in-out delay-150 w-11/12 md:w-[500px] border-opacity-50 bg-slate-400 overflow-auto shadow-xl shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-2xl border-solid border-2 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-5/6 md:mt-0 sm:mt-10">
+            <div className="transition ease-in-out delay-150 w-11/12 md:w-[500px]  bg-slate-400 overflow-auto shadow-xl shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-2xl border-solid border-0 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-5/6 md:mt-0 sm:mt-10">
               <div className="place-items-center grid">
                 <Image
                   src={"/pfp.png"}

@@ -21,7 +21,7 @@ export default function Home() {
         <Particles options={particleOptions} init={customInit} />
         {/* User */}
         <div className="absolute inset-0 flex justify-center items-center bg-opacity-30">
-          <div className="transition delay-20 ease-in-out delay-150 border-opacity-50 w-11/12 md:w-4/12 bg-slate-400 shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-xl border-solid border-2 border-sky-500 hover:-translate-y-5 h-auto">
+          <div className="transition delay-20 ease-in-out delay-150 border-opacity-50 w-11/12 md:w-4/12 bg-slate-400 shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-xl border-solid  border-sky-500 hover:-translate-y-5 h-auto">
             <div className="justify-center items-center flex flex-col space-y-5">
               <h1 className="py-10 text-4xl">Socials</h1>
             </div>
