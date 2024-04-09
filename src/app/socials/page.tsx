@@ -28,27 +28,27 @@ export default function Home() {
             <div className="justify-center items-center flex flex-col pb-20 pt-10 space-y-5">
               <a
                 href="https://discord.com/users/551819471149465631"
-                className="transition flex items-center ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-blue-800 text-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-blue-800 text-center w-5/6"
               >
                 <div className="flex items-center w-full">
                   <FaDiscord size={40} className="mx-5"></FaDiscord>
-                  <span className="md:ml-[1.6vh] text-2xl">Discord</span>
+                  <span className="ml-[1.6vh] text-2xl">Discord</span>
                 </div>
               </a>
 
               <a
                 href="https://www.youtube.com/channel/UC0b1jDceJzkin2Vr1EGAW0w"
-                className="transition flex items-center ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-red-900 text-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-red-900 text-center w-5/6"
               >
                 <FaYoutube size={40} className="mx-5"></FaYoutube>
-                <span className="md:ml-[1.6vh] text-2xl">Youtube</span>
+                <span className="ml-[1.6vh] text-2xl">Youtube</span>
               </a>
               <a
                 href="https://github.com/Lennyy1337"
-                className="transition flex items-center ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-slate-700 text-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-slate-700 text-center w-5/6"
               >
                 <FaGithub size={40} className="mx-5"></FaGithub>
-                <span className="md:ml-[1.6vh] text-2xl">Github</span>
+                <span className="ml-[1.6vh] text-2xl">Github</span>
               </a>
             </div>
             <div className="justify-center items-center flex flex-col py-10 space-y-5">
