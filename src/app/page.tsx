@@ -192,7 +192,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="justify-between flex mx-8 md:my-3 my-1">
-                <div className="flex flex-col md:py-3 justify-center items-center rounded-xl shadow-xl bg-slate-800 bg-opacity-30 backdrop-blur-md w-full mb-5 ">
+                <div className="flex flex-col md:py-3 justify-center items-center drop-shadow-2xl rounded-xl shadow-xl bg-slate-800 bg-opacity-30 backdrop-blur-md w-full mb-5 ">
                   {/* Picture */}
                   {isLoading && !initialLoadCompleted ? (
                     <div>Loading...</div>

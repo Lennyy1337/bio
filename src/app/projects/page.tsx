@@ -1,8 +1,12 @@
 "use client";
 import Background from "@/components/background";
-
+import { TiMessages } from "react-icons/ti";
 import Particles from "react-tsparticles";
 import { loadLinksPreset } from "tsparticles-preset-links";
+import { IoArrowBackCircle } from "react-icons/io5";
+import { FaServer } from "react-icons/fa";
+import { FaRegImage } from "react-icons/fa6";
+import { SiRoblox } from "react-icons/si";
 
 export default function Home() {
   async function customInit(main: any) {
@@ -26,43 +30,53 @@ export default function Home() {
             <div className="justify-center items-center flex flex-col pb-20 pt-10 space-y-5">
               <a
                 href="https://nexusadmin.co"
-                className="transition flex ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6"
               >
-                <span className="text-center justify-center items-center flex text-2xl">
-                  Nexus Admin
-                </span>
+                <div className="flex items-center w-full">
+                  <SiRoblox size={40} className="mx-3"></SiRoblox>
+                  <span className="ml-[1.6vh] text-2xl">Nexus Admin</span>
+                </div>
               </a>
               <a
                 href="https://discord.gg/hosts"
-                className="transition flex ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6"
               >
-                <span className="text-center justify-center items-center flex text-2xl">
-                  Lenny.host
-                </span>
+                <div className="flex items-center w-full">
+                  <FaRegImage size={40} className="mx-3"></FaRegImage>
+                  <span className="ml-[1.6vh] text-2xl">Lenny.host</span>
+                </div>
               </a>
               <a
                 href="https://discord.gg/aurevo-970496322262167612"
-                className="transition flex ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6"
               >
-                <span className="text-center justify-center items-center flex text-2xl">
-                  Aurevo
-                </span>
+                <div className="flex items-center w-full">
+                  <FaServer size={40} className="mx-3"></FaServer>
+                  <span className="ml-[1.6vh] text-2xl">Aurevo</span>
+                </div>
               </a>
               <a
                 href="https://discord.gg/gQvY5gUKwb"
-                className="transition flex ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6 justify-center items-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-indigo-500 text-center w-5/6"
               >
-                <span className="text-center justify-center items-center flex text-2xl">
-                  Xonia
-                </span>
+                <div className="flex items-center w-full">
+                  <TiMessages size={40} className="mx-3"></TiMessages>
+                  <span className="ml-[1.6vh] text-2xl">Xonia</span>
+                </div>
               </a>
             </div>
             <div className="justify-center items-center flex flex-col py-10 space-y-5">
               <a
                 href="/"
-                className="transition ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-green-500 py-2 px-2 size-2/12 w-5/12 hover:-translate-y-1 hover:bg-green-700 text-center"
+                className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-green-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-green-700 text-center w-5/6"
               >
-                Go back
+                <div className="flex items-center w-full">
+                  <IoArrowBackCircle
+                    size={40}
+                    className="mx-5"
+                  ></IoArrowBackCircle>
+                  <span className="ml-[1.6vh] text-2xl">Go Back</span>
+                </div>
               </a>
             </div>
           </div>
