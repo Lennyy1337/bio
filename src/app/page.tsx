@@ -174,19 +174,19 @@ export default function Home() {
                 />
               </div>
               <div className="justify-center items-center flex flex-col py-3 space-y-2">
-                <h1 className="md:text-5xl text-3xl font-bold">Lenny</h1>
-                <h1 className="md:text-3xl text-xl">Full stack developer</h1>
+                <h1 className="md:text-5xl text-3xl font-bold text-white">Lenny</h1>
+                <h1 className="md:text-3xl text-xl text-white">Full stack developer</h1>
               </div>
               <div className="justify-center items-center flex flex-col py-5 space-y-5">
                 <a
                   href="/projects"
-                  className="transition ease-in-out  border-opacity-50 delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-3/5 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                  className="text-white transition ease-in-out  border-opacity-50 delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-3/5 hover:-translate-y-1 hover:bg-indigo-500 text-center"
                 >
                   Projects
                 </a>
                 <a
                   href="/socials"
-                  className="transition ease-in-out  border-opacity-50 delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-3/5 hover:-translate-y-1 hover:bg-indigo-500 text-center"
+                  className="text-white transition ease-in-out  border-opacity-50 delay-20 rounded-lg border-solid border-2 border-sky-500 py-2 px-2 size-2/12 w-3/5 hover:-translate-y-1 hover:bg-indigo-500 text-center"
                 >
                   Socials
                 </a>
@@ -200,7 +200,7 @@ export default function Home() {
                     error
                   ) : data && data.spotify ? (
                     <>
-                      <h1 className="text-center md:text-2xl sm:text-lg">
+                      <h1 className="text-center md:text-2xl sm:text-lg text-white">
                         Currently listening to:
                       </h1>
                       <Image
@@ -212,20 +212,20 @@ export default function Home() {
                       />
 
                       {/* Title */}
-                      <h1 className="md:text-3xl text-center text-2xl text-ellipsis overflow-hidden">
+                      <h1 className="md:text-3xl text-center text-2xl text-ellipsis overflow-hidden text-white">
                         {data.spotify.song}
                       </h1>
                       {/* Artist */}
-                      <h1 className="text-center text-sm text-ellipsis">
+                      <h1 className="text-center text-sm text-ellipsis text-white">
                         {data.spotify.artist}
                       </h1>
                     </>
                   ) : (
                     <>
-                      <h1 className="text-3xl text-center">
+                      <h1 className="text-3xl text-center text-white">
                         No song is playing
                       </h1>
-                      <h1 className="text-center text-sm">
+                      <h1 className="text-center text-sm text-white">
                         No song is playing
                       </h1>
                     </>

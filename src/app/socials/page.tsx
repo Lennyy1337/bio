@@ -24,7 +24,7 @@ export default function Home() {
         <div className="absolute inset-0 flex justify-center items-center bg-opacity-30">
           <div className="transition delay-20 ease-in-out delay-150 border-opacity-50 w-11/12 md:w-4/12 bg-slate-400 shadow-lg shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-xl border-solid  border-sky-500 hover:-translate-y-5 h-auto">
             <div className="justify-center items-center flex flex-col space-y-5">
-              <h1 className="py-10 text-4xl">Socials</h1>
+              <h1 className="py-10 text-4xl text-white">Socials</h1>
             </div>
             <div className="justify-center items-center flex flex-col pb-20 pt-10 space-y-5">
               <a
@@ -33,7 +33,7 @@ export default function Home() {
               >
                 <div className="flex items-center w-full">
                   <FaDiscord size={40} className="mx-5"></FaDiscord>
-                  <span className="ml-[1.6vh] text-2xl">Discord</span>
+                  <span className="ml-[1.6vh] text-2xl text-white">Discord</span>
                 </div>
               </a>
 
@@ -42,14 +42,14 @@ export default function Home() {
                 className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-red-900 text-center w-5/6"
               >
                 <FaYoutube size={40} className="mx-5"></FaYoutube>
-                <span className="ml-[1.6vh] text-2xl">Youtube</span>
+                <span className="ml-[1.6vh] text-2xl text-white">Youtube</span>
               </a>
               <a
                 href="https://github.com/Lennyy1337"
                 className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-slate-700 text-center w-5/6"
               >
                 <FaGithub size={40} className="mx-5"></FaGithub>
-                <span className="ml-[1.6vh] text-2xl">Github</span>
+                <span className="ml-[1.6vh] text-2xl text-white">Github</span>
               </a>
             </div>
             <div className="justify-center items-center flex flex-col py-10 space-y-5">
@@ -62,7 +62,7 @@ export default function Home() {
                     size={40}
                     className="mx-5"
                   ></IoArrowBackCircle>
-                  <span className="ml-[1.6vh] text-2xl">Go Back</span>
+                  <span className="ml-[1.6vh] text-2xl text-white">Go Back</span>
                 </div>
               </a>
             </div>
