@@ -164,9 +164,9 @@ export default function Home() {
               <div className="place-items-center grid">
                 <Image
                   src={"/pfp.png"}
-                  width={200}
-                  height={200}
-                  alt="pfp"
+                  alt="PFP - Made by u/ItsJust_EmmaBro :D"
+                  width={100}
+                  height={100}
                   className={
                     "transition-all ease-in-out delay-50 object-center rounded-full md:mt-10 mt-5 border-4 hover:border-0 relative w-36 " +
                     status
@@ -174,8 +174,12 @@ export default function Home() {
                 />
               </div>
               <div className="justify-center items-center flex flex-col py-3 space-y-2">
-                <h1 className="md:text-5xl text-3xl font-bold text-white">Lenny</h1>
-                <h1 className="md:text-3xl text-xl text-white">Full stack developer</h1>
+                <h1 className="md:text-5xl text-3xl font-bold text-white">
+                  Lenny
+                </h1>
+                <h1 className="md:text-3xl text-xl text-white">
+                  Full stack developer
+                </h1>
               </div>
               <div className="justify-center items-center flex flex-col py-5 space-y-5">
                 <a
