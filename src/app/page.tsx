@@ -92,7 +92,7 @@ export default function Home() {
     setIsError(false);
     try {
       const res = await axios.get(
-        "https://api.lanyard.rest/v1/users/551819471149465631",
+        "https://api.lanyard.rest/v1/users/1224086033293901908",
         { cancelToken: cancelToken.token }
       );
       const resJson = res.data.data;
