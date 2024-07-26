@@ -4,7 +4,6 @@ import { useCallback, useEffect, useState } from "react";
 import axios, { CancelTokenSource } from "axios";
 import { AnimatePresence } from "framer-motion";
 import Background from "@/components/background";
-import Link from "next/link";
 
 interface Timestamps {
   start: number;
@@ -160,11 +159,6 @@ export default function Home() {
         <div>
           <Background></Background>
           {/* User */}
-          <div className="bg-yellow-400 absolute top-0 w-full h-auto p-2 text-center">
-            <h1 className="text-black">
-              My account got banned, new account: lennyy133
-            </h1>
-          </div>
           <div className="absolute inset-0 flex justify-center items-center bg-opacity-30 overflow-auto transition-all ease-in-out duration-300">
             <div className="transition-all ease-in-out delay-150 w-11/12 md:w-[500px]  bg-slate-400 overflow-auto shadow-xl shadow-slate-900/100 bg-opacity-30 backdrop-blur-sm rounded-2xl border-solid border-0 border-sky-500 md:hover:-translate-y-5 md:h-auto sm:h-5/6 md:mt-0 sm:mt-10">
               <div className="place-items-center grid">
