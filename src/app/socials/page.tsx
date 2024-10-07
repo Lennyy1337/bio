@@ -28,7 +28,7 @@ export default function Home() {
             </div>
             <div className="justify-center items-center flex flex-col pb-20 pt-10 space-y-5">
               <a
-                href="https://discord.com/users/551819471149465631"
+                href="https://discord.com/users/1272195936231362653"
                 className="transition flex items-center ease-in-out delay-20 rounded-lg border-opacity-50 border-solid border-2 border-sky-500 py-2 px-2 size-2/12 md:w-5/12 hover:-translate-y-1 hover:bg-blue-800 text-center w-5/6"
               >
                 <div className="flex items-center w-full">
