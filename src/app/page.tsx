@@ -91,7 +91,7 @@ export default function Home() {
     setIsError(false);
     try {
       const res = await axios.get(
-        "https://api.lanyard.rest/v1/users/1224086033293901908",
+        "https://api.lanyard.rest/v1/users/1272195936231362653",
         { cancelToken: cancelToken.token }
       );
       const resJson = res.data.data;
@@ -103,19 +103,19 @@ export default function Home() {
       if (resJson.discord_status !== status) {
         switch (resJson.discord_status) {
           case "online":
-            setStatus("border-green-500");
+            setStatus("border-4 border-green-500");
             break;
           case "dnd":
-            setStatus("border-red-500");
+            setStatus("border-4 border-red-500");
             break;
           case "idle":
-            setStatus("border-yellow-300");
+            setStatus("border-4 border-yellow-300");
             break;
           case "offline":
-            setStatus("border-slate-600");
+            setStatus("border-4 border-slate-600");
             break;
           default:
-            setStatus("border-yellow-300");
+            setStatus("border-4 border-yellow-300");
             break;
         }
       }
@@ -164,11 +164,11 @@ export default function Home() {
               <div className="place-items-center grid">
                 <Image
                   src={"/pfp.png"}
-                  alt="PFP - Made by u/ItsJust_EmmaBro :D"
+                  alt="PFP - Made by u/ItsJust_EmmaBro"
                   width={100}
                   height={100}
                   className={
-                    "transition-all ease-in-out delay-50 object-center rounded-full md:mt-10 mt-5 border-4 hover:border-0 relative w-36 " +
+                    "transition-all ease-in-out delay-50 object-center rounded-full md:mt-10 mt-5 hover:border-0 relative w-36 " +
                     status
                   }
                 />
@@ -196,7 +196,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="justify-between flex mx-8 md:my-3 my-1">
-                <div className="flex flex-col md:py-3 justify-center items-center drop-shadow-2xl rounded-xl shadow-xl bg-slate-800 bg-opacity-30 backdrop-blur-md w-full mb-5 ">
+                <div className="flex flex-col md:py-3 justify-center items-center rounded-xl shadow-2xl bg-slate-800 bg-opacity-30 backdrop-blur-md w-full mb-5 ">
                   {/* Picture */}
                   {isLoading && !initialLoadCompleted ? (
                     <div>Loading...</div>
@@ -230,7 +230,7 @@ export default function Home() {
                         No song is playing
                       </h1>
                       <h1 className="text-center text-sm text-white">
-                        No song is playing
+                        Check back later!
                       </h1>
                     </>
                   )}
